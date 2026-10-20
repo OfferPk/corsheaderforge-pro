@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgDarkCORS" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a14"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </linearGradient>
+    <linearGradient id="accentGradCORS" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgDarkCORS)"/>
+
+  <!-- Top App Header -->
+  <rect x="30" y="24" width="1140" height="60" rx="10" fill="#0e1428" stroke="#1c274c" stroke-width="1.5"/>
+  <rect x="46" y="38" width="70" height="32" rx="8" fill="url(#accentGradCORS)"/>
+  <text x="81" y="59" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="800" font-size="12" text-anchor="middle">CORS-SEC</text>
+  
+  <text x="130" y="55" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="18">CORSHeaderForge Pro</text>
+  <text x="350" y="55" fill="#06b6d4" font-family="-apple-system, sans-serif" font-weight="600" font-size="12">v1.0.0</text>
+  <text x="400" y="55" fill="#64748b" font-family="-apple-system, sans-serif" font-size="13">| Zero-Trust CORS, CSP Level 3 &amp; OWASP Headers Studio</text>
+
+  <rect x="850" y="40" width="155" height="28" rx="14" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-opacity="0.4"/>
+  <text x="927" y="58" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" text-anchor="middle">OWASP SECURE HEADERS</text>
+
+  <rect x="1015" y="40" width="145" height="28" rx="14" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4"/>
+  <text x="1087" y="58" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" text-anchor="middle">OBSERVATORY A+</text>
+
+  <!-- Left Column: Origin Isolation & Security Toggles -->
+  <rect x="30" y="100" width="555" height="545" rx="12" fill="#0e1428" stroke="#1c274c" stroke-width="1.5"/>
+  <text x="50" y="130" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Origin Isolation &amp; Security Controls</text>
+
+  <!-- Domain & Preflight Info -->
+  <rect x="50" y="145" width="245" height="50" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="60" y="165" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">PRIMARY HOST / DOMAIN</text>
+  <text x="60" y="185" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="700">api.fintechvault.com</text>
+
+  <rect x="315" y="145" width="250" height="50" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="325" y="165" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">PREFLIGHT CACHE (MAX-AGE)</text>
+  <text x="325" y="185" fill="#34d399" font-family="monospace" font-size="13" font-weight="700">86400s (24 Hours Cached)</text>
+
+  <!-- Allowed Origins Box -->
+  <rect x="50" y="205" width="515" height="48" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="60" y="223" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">ALLOWED ORIGINS (STRICT ALLOWLIST)</text>
+  <text x="60" y="242" fill="#fbbf24" font-family="monospace" font-size="11">https://app.fintechvault.com, https://admin.fintechvault.com</text>
+
+  <!-- Toggle Grid -->
+  <text x="50" y="278" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">Zero-Trust Header Enforcements</text>
+  
+  <rect x="50" y="290" width="245" height="55" rx="8" fill="#080c1a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="65" y="312" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="12">🔑 Allow Credentials</text>
+  <text x="65" y="330" fill="#94a3b8" font-family="monospace" font-size="10">Guarded: No wildcards (*)</text>
+
+  <rect x="315" y="290" width="250" height="55" rx="8" fill="#080c1a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="330" y="312" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="12">🔒 HSTS Preload (1 Year)</text>
+  <text x="330" y="330" fill="#94a3b8" font-family="monospace" font-size="10">max-age=31536000; preload</text>
+
+  <rect x="50" y="355" width="245" height="55" rx="8" fill="#080c1a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="65" y="377" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="12">🛡️ CSP Level 3 Hardened</text>
+  <text x="65" y="395" fill="#94a3b8" font-family="monospace" font-size="10">default-src 'self'; object 'none'</text>
+
+  <rect x="315" y="355" width="250" height="55" rx="8" fill="#080c1a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="330" y="377" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="12">🚫 Clickjacking Block (DENY)</text>
+  <text x="330" y="395" fill="#94a3b8" font-family="monospace" font-size="10">frame-ancestors 'none'</text>
+
+  <!-- Active Directives -->
+  <text x="50" y="435" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">Active Response Directives</text>
+  
+  <rect x="50" y="445" width="515" height="42" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="60" y="462" fill="#06b6d4" font-family="monospace" font-size="10" font-weight="700">Content-Security-Policy:</text>
+  <text x="60" y="478" fill="#94a3b8" font-family="monospace" font-size="9">default-src 'self'; script-src 'self' 'nonce-...'; object-src 'none';</text>
+
+  <rect x="50" y="495" width="515" height="42" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="60" y="512" fill="#06b6d4" font-family="monospace" font-size="10" font-weight="700">Cross-Origin-Opener-Policy &amp; CORP:</text>
+  <text x="60" y="528" fill="#94a3b8" font-family="monospace" font-size="9">same-origin; Cross-Origin-Resource-Policy: same-origin</text>
+
+  <rect x="50" y="545" width="515" height="42" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="60" y="562" fill="#06b6d4" font-family="monospace" font-size="10" font-weight="700">Permissions-Policy:</text>
+  <text x="60" y="578" fill="#94a3b8" font-family="monospace" font-size="9">camera=(), microphone=(), geolocation=(), payment=()</text>
+
+  <text x="50" y="625" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">✅ OWASP Secure Headers Compliant &bull; Zero Deprecated Headers</text>
+
+  <!-- Right Column: 10-Point Scorecard & Synthesizer -->
+  <rect x="615" y="100" width="555" height="545" rx="12" fill="#0e1428" stroke="#1c274c" stroke-width="1.5"/>
+
+  <!-- Score banner -->
+  <rect x="635" y="120" width="515" height="70" rx="10" fill="#0f1b36" stroke="#1c274c"/>
+  <rect x="650" y="130" width="50" height="50" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981"/>
+  <text x="675" y="163" fill="#34d399" font-family="monospace" font-weight="800" font-size="22" text-anchor="middle">A+</text>
+  <text x="715" y="148" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="16">Zero-Trust Score: 100 / 100</text>
+  <text x="715" y="168" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12">Mozilla Observatory A+ Ready • OWASP Compliant • Zero Data Leakage</text>
+
+  <!-- Checklist items -->
+  <rect x="635" y="200" width="515" height="32" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="650" y="221" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">✅ CORS Wildcard &amp; Credentials Guard (15/15 pts) - Strict origin allowlist</text>
+
+  <rect x="635" y="238" width="515" height="32" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="650" y="259" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">✅ CORS Transport &amp; Scoping (10/10 pts) - All origins mandate HTTPS</text>
+
+  <rect x="635" y="276" width="515" height="32" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="650" y="297" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">✅ CSP Level 3 Defense (15/15 pts) - default-src, object 'none', nonces</text>
+
+  <rect x="635" y="314" width="515" height="32" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="650" y="335" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">✅ HSTS Preload Hardening (15/15 pts) - max-age >= 31536000 &amp; preload</text>
+
+  <rect x="635" y="352" width="515" height="32" rx="6" fill="#080c1a" stroke="#1c274c"/>
+  <text x="650" y="373" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">✅ Clickjacking Shield (10/10 pts) - Frame embedding prohibited (DENY)</text>
+
+  <!-- Synthesizer Box -->
+  <text x="635" y="405" fill="#f8fafc" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">Multi-Server Synthesizer (Active: Nginx Conf)</text>
+  <rect x="635" y="415" width="515" height="215" rx="8" fill="#080c1a" stroke="#1c274c"/>
+  <text x="650" y="438" fill="#38bdf8" font-family="monospace" font-size="10">map $http_origin $cors_allowed_origin {</text>
+  <text x="650" y="458" fill="#38bdf8" font-family="monospace" font-size="10">    default ""; "~^https://app\.fintechvault\.com$" "$http_origin";</text>
+  <text x="650" y="478" fill="#38bdf8" font-family="monospace" font-size="10">}</text>
+  <text x="650" y="505" fill="#c084fc" font-family="monospace" font-size="10">add_header 'Access-Control-Allow-Origin' $cors_allowed_origin always;</text>
+  <text x="650" y="525" fill="#c084fc" font-family="monospace" font-size="10">add_header 'Access-Control-Allow-Credentials' 'true' always;</text>
+  <text x="650" y="545" fill="#34d399" font-family="monospace" font-size="10">add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload";</text>
+  <text x="650" y="565" fill="#34d399" font-family="monospace" font-size="10">add_header X-Content-Type-Options "nosniff" always;</text>
+  <text x="650" y="605" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">&bull; 1-click export for Nginx, Apache, Cloudflare Workers, Caddy, CloudFront, Next.js</text>
+</svg>
